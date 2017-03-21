@@ -1,0 +1,6 @@
+CREATE TABLE temperature (
+	id INTEGER PRIMARY KEY autoincrement,
+	readingtime TEXT NOT NULL,
+	arduino_id TEXT not NULL,
+	tempvalue REAL NOT NULL
+);
