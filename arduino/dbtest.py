@@ -6,7 +6,7 @@ con = None
 
 
 try:
-    con = lite.connect('./database/myhome.db')
+    con = lite.connect('../database/myhome.db')
 
     cur = con.cursor()
     cur.execute('SELECT SQLITE_VERSION()')
