@@ -13,7 +13,7 @@ while 1:
 con = None
 
 try:
-    con = sqlite3.connect('../database/myhome.db')
+    con = sqlite3.connect('~/myhome/database/myhome.db')
     cur = con.cursor()
     # add the selcet query
     # today = str(datetime.now())
