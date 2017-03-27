@@ -15,12 +15,12 @@ con = None
 try:
     # work on mac with virtual env
     con = lite.connect('../database/myhome.db')
-    # work on production server. Remeber to uncomment the line below 
+    # work on production server. Remeber to uncomment the line below
     # con = sqlite3.connect('~/myhome/database/myhome.db')
     cur = con.cursor()
     # add the selcet query
     # today = str(datetime.now())
-    # print today
+    print cur
     cur.execute("INSERT INTO temperature (readingtime,arduino_id,tempvalue) \
     VALUES (?, ?, ?);",(str(datetime.now()), myData.split(';')[0], myData.split(';')[1]))
     data = cur.fetchone()
