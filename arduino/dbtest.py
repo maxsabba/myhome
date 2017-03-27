@@ -6,7 +6,10 @@ con = None
 
 
 try:
+    # work on mac with virtual env
     con = lite.connect('../database/myhome.db')
+    # work on production
+    # con = lite.connect('~/myhome/database/myhome.db')
 
     cur = con.cursor()
     cur.execute('SELECT SQLITE_VERSION()')

@@ -13,7 +13,10 @@ while 1:
 con = None
 
 try:
-    con = sqlite3.connect('~/myhome/database/myhome.db')
+    # work on mac with virtual env
+    con = lite.connect('../database/myhome.db')
+    # work on production server. Remeber to uncomment the line below
+    # con = sqlite3.connect('~/myhome/database/myhome.db')
     cur = con.cursor()
     # add the selcet query
     # today = str(datetime.now())
