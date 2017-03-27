@@ -1,4 +1,4 @@
-import Serial
+import serial
 import sqlite3
 import sys
 from datetime import datetime
