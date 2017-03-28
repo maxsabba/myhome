@@ -31,7 +31,7 @@ try:
     print("SQLite messagge: %s" % data)
     con.commit()
     time.sleep(10)
-    count = count + 1
+
 
 
 except lite.Error, e:
