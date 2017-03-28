@@ -12,6 +12,7 @@ count = 0
 def readfromserial():
     # set serial inteface to read data from arduinoSerialData
     arduinoSerialData = serial.Serial('/dev/ttyACM0', 9600)
+    time.sleep(2)
     myData = arduinoSerialData.readline()
     # myData = "Stanza1; 30.9"
     # print('Ciclo while')
