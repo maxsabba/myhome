@@ -12,9 +12,9 @@ count = 0
 
 def readfromserial():
     # set serial inteface to read data from arduinoSerialData from Rasp
-    # arduinoserialdata = serial.Serial('/dev/ttyACM0', 9600)
+    arduinoserialdata = serial.Serial('/dev/ttyACM0', 9600)
     # set serial inteface to read data from arduinoSerialData from Mac
-    arduinoserialdata = serial.Serial('/dev/cu.usbmodem1421', 9600)
+    # arduinoserialdata = serial.Serial('/dev/cu.usbmodem1421', 9600)
     arduinoserialdata.write(99)
     time.sleep(0.5)
     myData = arduinoserialdata.readline()
